@@ -20,10 +20,6 @@ initial begin
     @(negedge clk);
     nrst = 1'b1;
 
-key2 = 64'hffffffffffffffff;
-key3 = 64'hffffffffffffffff;
-
-
 fork
 begin
 @(negedge clk); plaintext = 64'h0000000000000000; key1 = 64'h0000000000000000; key2 = 64'hffffffffffffffff; key3 = 64'hffffffffffffffff; 
